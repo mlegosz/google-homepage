@@ -57,11 +57,10 @@ img.selfie {
 }
 
 .material-icons {
-    color: darkgray;
-    border-radius: 50%;
+    color: rgb(134, 134, 134);
 }
 
-span.material-icons {
+#icon-nav {
     position: relative;
     top: 8px;
     margin: 0 4px 0 10px;
@@ -97,13 +96,36 @@ span.material-icons {
     width: auto;
     max-width: 584px;
     height: 44px;
-    display: flex;
     background: #fff;
     box-shadow: none;
     z-index: 3;
     border-radius: 24px;
     margin: 20px 0;
+}
 
+#icon-search {
+    padding: 13px 0 0 14px;
+    color: rgb(177, 177, 177);
+    font-size: 1.4em;
+}
+
+input.search {
+    height: 70%;
+    width: 90%;
+    font-size: 16px;
+    -webkit-appearance: none;
+    border: 0;
+    position: relative;
+    bottom: 4.5px;
+    left: 5px;
+}
+
+input:focus {
+    outline:none;
+}
+
+.searchbar:hover {
+    box-shadow: 1px 1px 3px 2px rgba(160, 160, 160, 0.2);
 }
 
 .searchbuttons {
@@ -111,47 +133,41 @@ span.material-icons {
 }
 
 .search1, .search2 {
-    background: rgb(243, 241, 241);
-    padding: 10px 20px;
+    background: rgb(245, 244, 244);
+    padding: 10px 16px;
     border-radius: 3px;
     margin: 16px auto;
 }
 
 .search1 {
-    margin-right: 15px;
+    margin-right: 10px;
 
 }
 
 .search2 {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .search1:hover {
     cursor: pointer;
-    border: lightgray 0.5px solid;
+    box-shadow: 0.5px 0.5px 1px 0.8px rgb(202, 202, 202);
 }
-
-/* .search2 {
-    background: rgb(243, 241, 241);
-    padding: 10px 20px;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-left: 10px;
-} */
 
 .search2:hover {
     cursor: pointer;
-    border: lightgray 0.5px solid;
+    box-shadow: 0.5px 0.5px 1px 0.8px rgb(202, 202, 202);
 }
 
 .language {
     margin: 20px auto auto auto;
     text-align: center;
+    display: block;
+    font-size: 0.9em;
 }
 
 .frlink {
     color: blue;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -165,16 +181,23 @@ span.material-icons {
     position: fixed;
     width: 100%;
     bottom: 0;
+    color: rgb(100, 100, 100);
 }
 
 .country {
-    padding: 15px 15px;
+    padding: 16px 30px;
     border-bottom: 1px rgb(221, 218, 218) solid;
+    font-size: 1.1em;
 }
 
 .footer-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 15px 0px;
+    padding: 16px 0px;
+}
+
+.footlink {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
 }
